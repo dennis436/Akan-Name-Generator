@@ -5,7 +5,8 @@ document
 
     const dateInput = document.getElementById("date").value;
     const gender = document.getElementById("gender").value;
-    const output = document.getElementById("output");
+    const dayOutput = document.getElementById("dayOutput");
+    const nameOutput = document.getElementById("nameOutput");
 
     if (!dateInput || !gender) {
       output.textContent = "Please fill in all fields.";
@@ -13,7 +14,15 @@ document
     }
 
     const date = new Date(dateInput);
-    const dayOfWeek = date.getDay();
+    const year = date.getFullYear();
+    const month = date.getMonth() + 1;
+    const day = date.getDate();
+
+    const cc = Math.floor(year / 100);
+    const YY = year % 100;
+    const d = Math.floor(
+      (cc / 4 - 2 * cc - 1 + (5 * YY) / 4 + (26 * (month + 1)) / 10 + day) % 7
+    );
 
     const maleNames = [
       "Kwasi",
