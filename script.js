@@ -43,6 +43,15 @@ document
       "Afua",
       "Ama",
     ];
+    const dayNames = [
+      "Sunday",
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+    ];
 
     if (gender === "male") {
       output.textContent = `Your Akan name is ${maleNames[dayOfWeek]}`;
