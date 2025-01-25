@@ -23,6 +23,7 @@ document
     const d = Math.floor(
       (cc / 4 - 2 * cc - 1 + (5 * YY) / 4 + (26 * (month + 1)) / 10 + day) % 7
     );
+    const dayOfWeek = d < 0 ? d + 7 : d;
 
     const maleNames = [
       "Kwasi",
