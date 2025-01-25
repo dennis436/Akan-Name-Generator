@@ -1,0 +1,44 @@
+body {
+  font-family: "Courier New", Courier;
+  text-align: center;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #366ccf;
+  color: white;
+  padding: 20px 0;
+}
+
+form {
+  margin: 20px auto;
+  padding: 20px;
+  width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(o, o, o, o.1);
+}
+
+label,
+select,
+input,
+button {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+button {
+  background-color: #21f128;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: 45a049;
+}

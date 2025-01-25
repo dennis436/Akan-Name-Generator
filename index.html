@@ -4,8 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AKAN NAME GENERATOR</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <header>
+      <h1>Akan Name Generator</h1>
+      <p>Discover your name based on your birthday and gender</p>
+    </header>
+    <main>
+      <form id="akanForm">
+        <label for="date">Enter Your Date of Birth:</label>
+        <input type="date" id="date" required />
+
+        <label for="gender">Select Your Gender:</label>
+        <select id="gender" required>
+          <option value="">--Choose Gender--</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+
+        <button type="submit">Find my Akan Name</button>
+      </form>
+    </main>
     <script src="script.js"></script>
   </body>
 </html>
