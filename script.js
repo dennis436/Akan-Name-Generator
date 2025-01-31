@@ -9,7 +9,7 @@ document
     const nameOutput = document.getElementById("nameOutput");
 
     if (!dateInput || !gender) {
-      output.textContent = "Please fill in all fields.";
+      nameOutput.textContent = "Please fill in all fields.";
       return;
     }
 
@@ -52,10 +52,9 @@ document
       "Friday",
       "Saturday",
     ];
-
     if (gender === "male") {
-      output.textContent = `Your Akan name is ${maleNames[dayOfWeek]}`;
+      nameOutput.textContent = `Your Akan name is ${maleNames[dayOfWeek]}.`;
     } else if (gender === "female") {
-      output.textContent = `Your Akan name is ${femaleNames[dayOfWeek]}`;
+      nameOutput.textContent = `Your Akan name is ${femaleNames[dayOfWeek]}.`;
     }
   });
