@@ -3,10 +3,21 @@ document
   .addEventListener("submit", function (event) {
     event.preventDefault();
 
-    const dateInput = document.getElementById("date").value;
-    const gender = document.getElementById("gender").value;
-    const dayOutput = document.getElementById("dayOutput");
-    const nameOutput = document.getElementById("nameOutput");
+    const dateParts = dateInput.split("-");
+
+    if (dateParts.length !== 3) {
+      dayOutput.textContent = "Please enter a valid date in YYYY-MM-DD format.";
+      return;
+    }
+
+    const year = parseInt(dateParts[0]);
+    const month = parseInt(dateParts[1]);
+    const day = parseInt(dateParts[2]);
+
+    if (month < 1 || month > 12 || day < 1 || day > 31) {
+      dayOutput.textContent = "Please enter a valid date.";
+      return;
+    }
 
     if (!dateInput || !gender) {
       nameOutput.textContent = "Please fill in all fields.";
