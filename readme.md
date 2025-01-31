@@ -6,7 +6,7 @@ This application calculates the day of the week a user was born and outputs thei
 
 ## Author
 
-[MUCHIRI DENNIS]
+MUCHIRI DENNIS FULL STACK DEVELOPER
 
 ## Setup Instructions
 
