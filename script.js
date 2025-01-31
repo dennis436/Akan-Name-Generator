@@ -13,11 +13,6 @@ document
       return;
     }
 
-    const date = new Date(dateInput);
-    const year = date.getFullYear();
-    const month = date.getMonth() + 1;
-    const day = date.getDate();
-
     const cc = Math.floor(year / 100);
     const YY = year % 100;
     const d = Math.floor(
